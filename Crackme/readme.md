@@ -103,9 +103,13 @@ Quy luật của hàm mã hóa sẽ là:
 Chúng ta thử quy hết về dòng đầu tiên
 
 a3 = a2 ^ k1 = a1 ^ 0x50 ^ k1
+
 b3 = a2 ^ b2 = a1 ^ 0x50 ^ a1 ^ b1 = b1 ^ 0x50
+
 c3 = b2 ^ c2 = a1 ^ b1 ^ b1 ^ c1 = a1 ^ c1
+
 d3 = d2 ^ k2 = c1 ^ d1 ^ d1 ^ k1 = c1 ^ k1
+
 k3 = d2 ^ k2 = c1 ^ d1 ^ d1 ^ k1 = c1 ^ k1
 
 => Mỗi ký tự chỉ bị ảnh hưởng bới số các kí tự nhất định chứ không phải toàn bộ chuỗi ký tự, vì lệnh ```xor``` 2 lần với 1 giá trị sẽ trở lại giá trị ban đầu 
