@@ -84,7 +84,7 @@ def encrypt(flagEncrypt):
 
 Đây là input của chúng ta sau khi ra khỏi hàm mã hóa 
 
-![image](https://user-images.githubusercontent.com/101321172/165470217-1a91ee4e-cba1-47f5-a84c-359b71f72582.png)
+![165470217-1a91ee4e-cba1-47f5-a84c-359b71f72582](https://user-images.githubusercontent.com/101321172/165551733-84fa58ac-8b54-4ab1-92aa-1ed17d10cb56.png)
 
 Và cuối cùng sẽ được đem so sánh với 33 ký tự này
 
@@ -98,7 +98,7 @@ Giờ nhiệm vụ của chúng ta là tìm ra giá trị ban đầu tự flag b
 
 Quy luật của hàm mã hóa sẽ là:
 
-![t](https://user-images.githubusercontent.com/101321172/165471751-6bee1143-6582-4cb3-91b7-db63faf38df5.jpeg)
+![278992701_344588504319663_7684014743038322795_n](https://user-images.githubusercontent.com/101321172/165551897-09872bd4-599a-4b51-a3d0-3caf1167b57f.jpg)
 
 Chúng ta thử quy hết về dòng đầu tiên
 
