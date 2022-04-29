@@ -100,23 +100,21 @@ Code giải:
 ```C
 #include <iostream>
 
-
-
 int main(){
-	unsigned __int64 flagPTR  = 0x49d5350d575ca310;
-	unsigned __int64 flagPTR2 = 0xbffc208e9ef90f6a;
+	unsigned __int64 flag  = 0x49d5350d575ca310;
+	unsigned __int64 flag2 = 0xbffc208e9ef90f6a;
 
-	unsigned __int64 flagPTR3 = 0x644681c7bb0cb7a2;
-	unsigned __int64 flagPTR4 = 0x83e83897e0b61bea;
+	unsigned __int64 flag3 = 0x644681c7bb0cb7a2;
+	unsigned __int64 flag4 = 0x83e83897e0b61bea;
 
-	unsigned __int64 flagPTR5 = 0x13ce365e5a9f6ddd;
-	unsigned __int64 flagPTR6 = 0x5b575f2b16d0f43d;
+	unsigned __int64 flag5 = 0x13ce365e5a9f6ddd;
+	unsigned __int64 flag6 = 0x5b575f2b16d0f43d;
 
-	unsigned __int64 flagPTR7 = 0xe537e3c7e41557c0;
-	unsigned __int64 flagPTR8 = 0x89bda52571c130de;
+	unsigned __int64 flag7 = 0xe537e3c7e41557c0;
+	unsigned __int64 flag8 = 0x89bda52571c130de;
 
-	unsigned __int64 flagPTR9 = 0x2c9b3c6c4919e15f;
-	unsigned __int64 flagPTR10 = 0x30a09411d777e851;
+	unsigned __int64 flag9 = 0x2c9b3c6c4919e15f;
+	unsigned __int64 flag10 = 0x30a09411d777e851;
 
 	__int64 i = 0;
 
@@ -131,40 +129,38 @@ int main(){
 
 	j = 32;
 		do{
-			flagPTR2 -= (i + flagPTR) ^ (16 * flagPTR - 0x2CBDA60BFD707FD3) ^ ((flagPTR >> 5) + 0x424F0D99A012A826);
-			flagPTR -= (i + flagPTR2) ^ (16 * flagPTR2 - 0x1EC32D622D0480D8) ^ ((flagPTR2 >> 5) + 0x488D27F32AE91451);
+			flag2 -= (i + flag) ^ (16 * flag - 0x2CBDA60BFD707FD3) ^ ((flag >> 5) + 0x424F0D99A012A826);
+			flag -= (i + flag2) ^ (16 * flag2 - 0x1EC32D622D0480D8) ^ ((flag2 >> 5) + 0x488D27F32AE91451);
 
-			flagPTR4 -= (i + flagPTR3) ^ (16 * flagPTR3 - 0x2CBDA60BFD707FD3) ^ ((flagPTR3 >> 5) + 0x424F0D99A012A826);
-			flagPTR3 -= (i + flagPTR4) ^ (16 * flagPTR4 - 0x1EC32D622D0480D8) ^ ((flagPTR4 >> 5) + 0x488D27F32AE91451);
+			flag4 -= (i + flag3) ^ (16 * flag3 - 0x2CBDA60BFD707FD3) ^ ((flag3 >> 5) + 0x424F0D99A012A826);
+			flag3 -= (i + flag4) ^ (16 * flag4 - 0x1EC32D622D0480D8) ^ ((flag4 >> 5) + 0x488D27F32AE91451);
 
-			flagPTR6 -= (i + flagPTR5) ^ (16 * flagPTR5 - 0x2CBDA60BFD707FD3) ^ ((flagPTR5 >> 5) + 0x424F0D99A012A826);
-			flagPTR5 -= (i + flagPTR6) ^ (16 * flagPTR6 - 0x1EC32D622D0480D8) ^ ((flagPTR6 >> 5) + 0x488D27F32AE91451);
+			flag6 -= (i + flag5) ^ (16 * flag5 - 0x2CBDA60BFD707FD3) ^ ((flag5 >> 5) + 0x424F0D99A012A826);
+			flag5 -= (i + flag6) ^ (16 * flag6 - 0x1EC32D622D0480D8) ^ ((flag6 >> 5) + 0x488D27F32AE91451);
 
-			flagPTR8 -= (i + flagPTR7) ^ (16 * flagPTR7 - 0x2CBDA60BFD707FD3) ^ ((flagPTR7 >> 5) + 0x424F0D99A012A826);
-			flagPTR7 -= (i + flagPTR8) ^ (16 * flagPTR8 - 0x1EC32D622D0480D8) ^ ((flagPTR8 >> 5) + 0x488D27F32AE91451);
+			flag8 -= (i + flag7) ^ (16 * flag7 - 0x2CBDA60BFD707FD3) ^ ((flag7 >> 5) + 0x424F0D99A012A826);
+			flag7 -= (i + flag8) ^ (16 * flag8 - 0x1EC32D622D0480D8) ^ ((flag8 >> 5) + 0x488D27F32AE91451);
 
-			flagPTR10 -= (i + flagPTR9) ^ (16 * flagPTR9 - 0x2CBDA60BFD707FD3) ^ ((flagPTR9 >> 5) + 0x424F0D99A012A826);
-			flagPTR9 -= (i + flagPTR10) ^ (16 * flagPTR10 - 0x1EC32D622D0480D8) ^ ((flagPTR10 >> 5) + 0x488D27F32AE91451);
-			//std::cout << "0x" <<std::hex << flagPTR << "\n";
+			flag10 -= (i + flag9) ^ (16 * flag9 - 0x2CBDA60BFD707FD3) ^ ((flag9 >> 5) + 0x424F0D99A012A826);
+			flag9 -= (i + flag10) ^ (16 * flag10 - 0x1EC32D622D0480D8) ^ ((flag10 >> 5) + 0x488D27F32AE91451);
+			//std::cout << "0x" <<std::hex << flag << "\n";
 			i -= 0x123457898765432;
 			--j;
 		}
 
 		while(j);
 		
-
-	std::cout <<  "0x" <<std::hex << flagPTR << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR2 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR3 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR4 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR5 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR6 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR7 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR8 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR9 << "\n";
-	std::cout  << "0x"<< std::hex << flagPTR10 << "\n";
+	std::cout <<  "0x" <<std::hex << flag << "\n";
+	std::cout  << "0x"<< std::hex << flag2 << "\n";
+	std::cout  << "0x"<< std::hex << flag3 << "\n";
+	std::cout  << "0x"<< std::hex << flag4 << "\n";
+	std::cout  << "0x"<< std::hex << flag5 << "\n";
+	std::cout  << "0x"<< std::hex << flag6 << "\n";
+	std::cout  << "0x"<< std::hex << flag7 << "\n";
+	std::cout  << "0x"<< std::hex << flag8 << "\n";
+	std::cout  << "0x"<< std::hex << flag9 << "\n";
+	std::cout  << "0x"<< std::hex << flag10 << "\n";
 }
-
 ```
 
 flag: KCSC{833N_5p3nD1N'_m057_7H31r_L1v35_l1v1n'_1n_7H3_G4ng574'5_p4R4d123}
