@@ -76,7 +76,7 @@ Mà 80 & 0xf == 0 => flag không thể có 80 phần tử
 
 Mà thực ra đoán số phần tử của flag cũng chẳng giải quyết được gì >:l
 
-Mảng ```encrypted_flag``` là kết quả của ```flag``` sau khi qua hàm mã hóa và tách các ký tự ra, nên chúng ta chỉ cần đi ngược lại hàm này
+Mảng ```encrypted_flag``` là kết quả của ```flag``` sau khi qua hàm mã hóa và tách các ký tự ra, nên chúng ta chỉ cần đi ngược lại hàm này bằng cách nối các ký tự trong mảng ```encrypted_flag``` lại, sau đó đi ngược lại hàm mã hóa:
 
 
 ```C
